@@ -151,11 +151,11 @@ def page_end():
     st.balloons()
     
     st.title('あなたのオススメの長野県の企業')
-    df = pd.read_excel(r'C:\デスクトップ\情報基礎実習\NagaNo_career_data.xlsx')
+    df = pd.read_excel('NagaNo_career_data.xlsx')
     st.table(df)
 
 
-# ページ遷移のための判定
+# ページ遷移のための判定\
 if st.session_state.page_id == "main":
     main()
 
